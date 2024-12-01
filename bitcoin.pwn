@@ -5,9 +5,9 @@ enum E_BITCOIN{
     E_BITCOIN_ATUALIZACAO[64],
     Float:E_BITCOIN_ALTERACAO  
 };
-new BitcoinData[E_BITCOIN];        
-new Float:btcTemp[MAX_PLAYERS];
-new valorReaisTemp[MAX_PLAYERS];
+new BitcoinData[E_BITCOIN],        
+    Float:btcTemp[MAX_PLAYERS],
+    valorReaisTemp[MAX_PLAYERS];
 
 new Float:saldoBitcoin[MAX_PLAYERS]; // btc dos cara
 
