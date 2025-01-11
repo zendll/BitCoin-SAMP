@@ -7,9 +7,8 @@ enum E_BITCOIN{
 };
 new BitcoinData[E_BITCOIN],        
     Float:btcTemp[MAX_PLAYERS],
-    valorReaisTemp[MAX_PLAYERS];
-
-new Float:saldoBitcoin[MAX_PLAYERS]; // btc dos cara
+    valorReaisTemp[MAX_PLAYERS],
+    Float:saldoBitcoin[MAX_PLAYERS]; // btc dos cara
 
 
 hook OnGameModeInit(){
