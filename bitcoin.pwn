@@ -27,16 +27,17 @@ new valorReaisTemp[MAX_PLAYERS]; //mesma coisa de cima porem aqui armazenar o va
 new Float:saldoBitcoin[MAX_PLAYERS]; // btc dos cara
 
 
-hook OnGameModeInit(){
+hook OnGameModeInit() 
+    return Iniciar_BitCoin();
 
-    BitcoinData[E_BITCOIN_VALOR] = 500000;  
-    BitcoinData[E_BITCOIN_ALTERACAO] = 0.0; 
+static stock Iniciar_BitCoin(){
+  BitcoinData[E_BITCOIN_VALOR] = 500000;  
+  BitcoinData[E_BITCOIN_ALTERACAO] = 0.0; 
 
-    // Inicializando com uma data fictícia
-    format(BitcoinData[E_BITCOIN_ATUALIZACAO], sizeof(BitcoinData[E_BITCOIN_ATUALIZACAO]), "Inicial"); //index
-    return 1;
+  // Inicializando com uma data fictícia
+  format(BitcoinData[E_BITCOIN_ATUALIZACAO], sizeof(BitcoinData[E_BITCOIN_ATUALIZACAO]), "Inicial"); //index
+  return true;
 }
-
 static stock Float:Obter_ValorBitcoin() 
     return BitcoinData[E_BITCOIN_VALOR];
 
